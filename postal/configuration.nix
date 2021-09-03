@@ -1,24 +1,14 @@
-{ pkgs, ... }: {
+{ pkgs, lib, ... }: {
   imports = [
     ./hardware-configuration.nix
-    
-    
+
+    ./linode.nix # there are some networking config items in here
   ];
 
   boot.cleanTmpDir = true;
 
   networking.hostName = "postal";
   networking.firewall.allowPing = true;
-
-  networking.usePredictableInterfaceNames = false;
-  networking.useDHCP = false;
-  networking.interfaces.eth0.useDHCP = true;
-
-  environment.systemPackages = with pkgs; [
-      inetutils
-      mtr
-      sysstat
-  ];
 
   services.openssh.enable = true;
   users.users.root.openssh.authorizedKeys.keys = [
