@@ -11,7 +11,5 @@
   networking.firewall.allowPing = true;
 
   services.openssh.enable = true;
-  users.users.root.openssh.authorizedKeys.keys = [
-    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEwQfzs4sQYgvcVKlWFbBKPmFH1yPFBGi4lJMrIlYm/5 zrl@lugia" 
-  ];
+  users.users.root.openssh.authorizedKeys.keys = lib.flatten(builtins.attrValues(import ../ssh_keys.nix));
 }
