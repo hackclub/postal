@@ -3,6 +3,9 @@
     ./hardware-configuration.nix
 
     ./linode.nix # there are some networking config items in here
+
+    # Services
+    ./nginx
   ];
 
   boot.cleanTmpDir = true;
