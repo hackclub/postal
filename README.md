@@ -1,6 +1,6 @@
 # Postal
 
-This is [Hack Club Bank](https://hackclub.com/bank/)'s deployment of [Sendy](https://sendy.co/), available for free to all Hack Clubs, hackathons, and nonprofits running on Hack Club Bank.
+This is [HCB](https://hackclub.com/hcb/)'s deployment of [Sendy](https://sendy.co/), available for free to all Hack Clubs, hackathons, and nonprofits running on HCB.
 
 Powered by NixOS and [Morph](https://github.com/DBCDK/morph).
 
