@@ -1,5 +1,5 @@
 {
-  network.description = "postal deployment on Linode for Hack Club Bank";
+  network.description = "postal deployment on Linode for HCB";
 
   "postal" = { config, pkgs, lib, ... }:
   {
